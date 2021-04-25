@@ -33,6 +33,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--animation);
+
+  .modal__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
 }
 
 .button-close {
@@ -48,18 +57,9 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transition: fill var(--animation);
-}
 
-.button-close:hover,
-.button-close:focus {
-  fill: var(--accent-color);
-}
-
-.modal__title {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-align: center;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }

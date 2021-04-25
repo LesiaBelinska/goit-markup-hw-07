@@ -29,11 +29,11 @@
   border-radius: 50%;
   background-color: var(--social-bg-icon-color);
   transition: background-color var(--animation);
-}
 
-.footer-icons__link:hover,
-.footer-icons__link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer__grid_colocation {

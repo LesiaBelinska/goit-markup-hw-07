@@ -24,11 +24,11 @@
   border-radius: 4px;
   padding: 11px 16px 11px 42px;
   transition: border-color var(--animation);
-}
 
-.form-input__form-field:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .form-input__form-field:focus + .form-input__icon {
@@ -48,20 +48,19 @@
   resize: none;
   padding: 12px 16px;
   margin-bottom: 20px;
-}
 
-.form__label_message::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--placeholder-color);
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--placeholder-color);
+  }
 }
 
 .button-submit {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  /*margin-bottom: 40px;*/
 }
 
 .checkbox {

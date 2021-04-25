@@ -13,9 +13,9 @@
   color: var(--title-color);
   background-color: var(--accent-color);
   transition: background-color var(--animation);
-}
 
-.button:hover,
-.button:focus {
-  background-color: var(--hover-button-color);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-button-color);
+  }
 }

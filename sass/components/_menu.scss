@@ -2,25 +2,22 @@
   display: inline-flex;
 }
 
-.menu__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
 .menu__link {
-  color: var(--main-text-color);
-
   position: relative;
-  transition: color var(--animation);
-}
 
-.menu__link:hover,
-.menu__link:focus {
-  color: var(--accent-color);
+  color: var(--main-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu__link_current::after {

@@ -2,11 +2,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
-
-.contacts__icon {
-  fill: currentColor;
-  margin-right: 10px;
+  color: var(--secondary-text-color);
 }
 
 .contacts__item {
@@ -18,22 +14,20 @@
 }
 
 .contacts__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.contacts {
-  color: var(--secondary-text-color);
-}
-
-.contacts__link {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
   transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-color);
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
